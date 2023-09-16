@@ -19,7 +19,7 @@ module.exports.UrlAdd = async (req, res) => {
     const user = await User.findById(decodedToken.userId)
     const ShortId = shortid.generate();
 
-    const shorturl = `http://localhost:5173/shorturl/` + ShortId;
+    const shorturl = `https://flourishing-froyo-66faf3.netlify.app/shorturl/` + ShortId;
 
     const newUrl = new Url({
       title,
